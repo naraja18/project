@@ -1,0 +1,88 @@
+{
+  "Q1_rows": 30,
+  "Q2_rows": 30,
+  "Q2_total": 2998668.8,
+  "Q2_max": {
+    "city": "Bengaluru",
+    "category": "Electronics",
+    "revenue": 233909.45
+  },
+  "Q3_rows": 11,
+  "Q4_rows": 25,
+  "Q5_rows": 550,
+  "Q5_avg_customer_spend": 2552.06,
+  "Q6_rank_diff_row_number": 8,
+  "Q7_rows": 183,
+  "Q7_final_cumulative": 2998668.8,
+  "city_stats": [
+    {
+      "city": "Bengaluru",
+      "sum": 523643.4,
+      "mean": 276.4748680042239,
+      "count": 1894
+    },
+    {
+      "city": "Chennai",
+      "sum": 463629.15,
+      "mean": 272.72302941176474,
+      "count": 1700
+    },
+    {
+      "city": "Delhi",
+      "sum": 502829.8,
+      "mean": 243.61908914728681,
+      "count": 2064
+    },
+    {
+      "city": "Hyderabad",
+      "sum": 528589.9,
+      "mean": 284.9541239892183,
+      "count": 1855
+    },
+    {
+      "city": "Mumbai",
+      "sum": 479058.5,
+      "mean": 296.9984500929944,
+      "count": 1613
+    },
+    {
+      "city": "Pune",
+      "sum": 500918.05,
+      "mean": 252.4788558467742,
+      "count": 1984
+    }
+  ],
+  "pivot_grand_total": 2998668.8,
+  "q6_city_leaders": [
+    {
+      "city": "Bengaluru",
+      "customer_id": "C0082",
+      "total_spend": 12856.2
+    },
+    {
+      "city": "Chennai",
+      "customer_id": "C0930",
+      "total_spend": 10151.4
+    },
+    {
+      "city": "Delhi",
+      "customer_id": "C0291",
+      "total_spend": 13742.6
+    },
+    {
+      "city": "Hyderabad",
+      "customer_id": "C0743",
+      "total_spend": 12730.050000000001
+    },
+    {
+      "city": "Mumbai",
+      "customer_id": "C0693",
+      "total_spend": 14766.550000000001
+    },
+    {
+      "city": "Pune",
+      "customer_id": "C0426",
+      "total_spend": 10377.1
+    }
+  ]
+}

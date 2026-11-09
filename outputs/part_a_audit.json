@@ -1,0 +1,169 @@
+{
+  "raw_orders_rows": 13084,
+  "exact_duplicates": 119,
+  "pending_rows": 656,
+  "distinct_order_ids": 12309,
+  "non_numeric_order_amount": 120,
+  "negative_delivery_minutes": 106,
+  "blank_delivery_minutes": 2541,
+  "blank_age": 61,
+  "age_outside_10_100": 6,
+  "distinct_raw_city_spellings": 24,
+  "distinct_nonblank_gender_spellings": 10,
+  "blank_gender": 30,
+  "raw_shapes_dtypes_missing": {
+    "customers": {
+      "shape": [
+        1200,
+        5
+      ],
+      "dtypes": {
+        "customer_id": "object",
+        "city": "object",
+        "signup_date": "object",
+        "age": "object",
+        "gender": "object"
+      },
+      "missing": {
+        "customer_id": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "city": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "signup_date": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "age": {
+          "count": 61,
+          "percent": 5.083333333333333
+        },
+        "gender": {
+          "count": 30,
+          "percent": 2.5
+        }
+      }
+    },
+    "products": {
+      "shape": [
+        40,
+        4
+      ],
+      "dtypes": {
+        "product_id": "object",
+        "product_name": "object",
+        "category": "object",
+        "price_inr": "int64"
+      },
+      "missing": {
+        "product_id": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "product_name": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "category": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "price_inr": {
+          "count": 0,
+          "percent": 0.0
+        }
+      }
+    },
+    "orders": {
+      "shape": [
+        13084,
+        9
+      ],
+      "dtypes": {
+        "order_id": "object",
+        "customer_id": "object",
+        "product_id": "object",
+        "quantity": "int64",
+        "order_ts": "object",
+        "status": "object",
+        "discount_pct": "int64",
+        "order_amount": "object",
+        "delivery_minutes": "object"
+      },
+      "missing": {
+        "order_id": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "customer_id": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "product_id": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "quantity": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "order_ts": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "status": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "discount_pct": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "order_amount": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "delivery_minutes": {
+          "count": 2541,
+          "percent": 19.420666462855397
+        }
+      }
+    }
+  },
+  "cleaning_changes": {
+    "city_values_normalised": 476,
+    "gender_values_normalised_or_unknown": 950,
+    "blank_ages_filled": 61,
+    "out_of_range_ages_replaced": 6,
+    "exact_duplicate_rows_removed": 119,
+    "additional_duplicate_order_versions_removed": 656,
+    "order_amounts_reconstructed": 120,
+    "negative_delivery_values_set_missing": 106,
+    "completed_delivery_values_imputed": 774
+  },
+  "clean_orders": 12309,
+  "completed": 11110,
+  "cancelled": 1199,
+  "completed_revenue": 2998668.8,
+  "customers": 1200,
+  "products": 40,
+  "clean_city_counts": {
+    "Pune": 227,
+    "Delhi": 210,
+    "Bengaluru": 197,
+    "Chennai": 191,
+    "Hyderabad": 191,
+    "Mumbai": 184
+  },
+  "clean_gender_counts": {
+    "female": 610,
+    "male": 560,
+    "unknown": 30
+  },
+  "missing_clean_age": 0,
+  "missing_completed_delivery": 0,
+  "missing_cancelled_delivery": 1199
+}

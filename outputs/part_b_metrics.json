@@ -1,0 +1,181 @@
+{
+  "rfm_customers": 1175,
+  "rfm_recency_median": 19.0,
+  "rfm_recency_min": 0,
+  "rfm_recency_max": 180,
+  "rfm_frequency_mean": 9.45531914893617,
+  "rfm_frequency_max": 33,
+  "rfm_monetary_mean": 2552.0585531914894,
+  "rfm_monetary_max": 14766.550000000001,
+  "kmeans": [
+    {
+      "k": 2,
+      "inertia": 1820.7605530118512,
+      "silhouette": 0.464971805147615
+    },
+    {
+      "k": 3,
+      "inertia": 1268.234587068762,
+      "silhouette": 0.4451611905197954
+    },
+    {
+      "k": 4,
+      "inertia": 743.0711078443475,
+      "silhouette": 0.5255443348818724
+    },
+    {
+      "k": 5,
+      "inertia": 617.3666358544997,
+      "silhouette": 0.48049500840771253
+    },
+    {
+      "k": 6,
+      "inertia": 503.1706222581653,
+      "silhouette": 0.4818721636138158
+    },
+    {
+      "k": 7,
+      "inertia": 408.4604544194091,
+      "silhouette": 0.4163373417690264
+    },
+    {
+      "k": 8,
+      "inertia": 366.5034865531685,
+      "silhouette": 0.4123290612695322
+    }
+  ],
+  "chosen_k": 4,
+  "segment_profiles": [
+    {
+      "segment_id": 0,
+      "size": 436,
+      "mean_recency": 28.862385321100916,
+      "mean_frequency": 3.772935779816514,
+      "mean_monetary": 1057.618233944954
+    },
+    {
+      "segment_id": 1,
+      "size": 138,
+      "mean_recency": 24.115942028985508,
+      "mean_frequency": 6.768115942028985,
+      "mean_monetary": 7129.695652173913
+    },
+    {
+      "segment_id": 2,
+      "size": 419,
+      "mean_recency": 8.766109785202865,
+      "mean_frequency": 19.403341288782816,
+      "mean_monetary": 3410.020525059666
+    },
+    {
+      "segment_id": 3,
+      "size": 182,
+      "mean_recency": 109.04395604395604,
+      "mean_frequency": 2.2032967032967035,
+      "mean_monetary": 685.9925824175824
+    }
+  ],
+  "segment_name_map": {
+    "0": "Regular Value",
+    "1": "Premium Value",
+    "2": "Frequent Essentials",
+    "3": "At-Risk Occasional"
+  },
+  "pca_explained_variance_ratio": [
+    0.6342787496047422,
+    0.21803761714547434
+  ],
+  "cohort_size": 1156,
+  "lapsed_count": 443,
+  "lapsed_rate": 0.38321799307958476,
+  "train_size": 924,
+  "test_size": 232,
+  "baseline_f1": 0.0,
+  "baseline_accuracy": 0.6163793103448276,
+  "scaler_training_frequency_mean": 8.114718614718615,
+  "full_cohort_frequency_mean": 8.028546712802768,
+  "metrics": {
+    "logistic": {
+      "best_params": {
+        "model__C": 100
+      },
+      "cv_f1": 0.650552962900789,
+      "confusion_matrix": [
+        [
+          111,
+          32
+        ],
+        [
+          31,
+          58
+        ]
+      ],
+      "precision": 0.6444444444444445,
+      "recall": 0.651685393258427,
+      "f1": 0.6480446927374302
+    },
+    "random_forest": {
+      "best_params": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 5
+      },
+      "cv_f1": 0.6813966205306824,
+      "confusion_matrix": [
+        [
+          114,
+          29
+        ],
+        [
+          33,
+          56
+        ]
+      ],
+      "precision": 0.6588235294117647,
+      "recall": 0.6292134831460674,
+      "f1": 0.6436781609195402
+    }
+  },
+  "oversampled_logistic": {
+    "precision": 0.5891472868217055,
+    "recall": 0.8539325842696629,
+    "f1": 0.6972477064220184
+  },
+  "rf_top_features": [
+    [
+      "num__frequency",
+      0.3052304572118755
+    ],
+    [
+      "num__monetary",
+      0.2785302076265119
+    ],
+    [
+      "num__recency",
+      0.11259411203836622
+    ],
+    [
+      "num__cancellation_rate",
+      0.07212427718073931
+    ],
+    [
+      "num__avg_discount",
+      0.047519586818612194
+    ]
+  ],
+  "lr_coefficients": [
+    [
+      "num__frequency",
+      -1.6973307258551034
+    ],
+    [
+      "cat__favourite_category_Electronics",
+      -1.1350564326022823
+    ],
+    [
+      "cat__favourite_category_Grocery",
+      -0.4492255340656043
+    ]
+  ],
+  "retention_top10_true_lapsed": 3,
+  "retention_list_rows": 10
+}
